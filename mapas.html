@@ -1,0 +1,889 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Seguros Oriente</title>
+<link rel="stylesheet" href="css.css" type="text/css" />
+<style type="text/css">
+#menu ul li:focus ul, #menu ul li:active ul, #menu ul li a:active ul
+ {
+	display: block;
+	position: relative;
+	width: 160px;
+	border: solid 1px #fff;
+	border-top: none;
+	background: #1c5381;
+}
+#menu ul li:focus span, #menu ul li:active span, #menu ul li a:active 
+{
+	background-color: #1c5381;
+	border-bottom: solid 1px #6CC;
+	color: #fff;
+	font-weight: bold;
+	border-left: solid 8px #c1d640;
+	border-right: solid 8px #c1d640;
+}
+li a
+{
+	cursor: pointer;
+}
+</style>
+	<link rel='stylesheet' type='text/css' href='styles.css' />
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+	<script type="text/javascript" src="jquery-1.10.2.min.js" ></script>
+	<script type='text/javascript' src='menu_jquery.js'></script>
+    <!------Inicio de Codigo javascript ciudades------->
+<script>
+ function ciudades(ciudadActual)
+ {
+	var mapa = document.getElementById("mapa");
+	mapa.innerHTML = " "; 
+	//robos
+	if(ciudadActual == 0 )
+	{	 
+	
+mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed1b395a61e09e260&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-0.160568,-78.483045&amp;spn=0.003755,0.00456&amp;z=17&amp;iwloc=0004ed1b3b9c2edbafd9d&amp;output=embed"></iframe><br />';
+	}
+	//parabrisas
+	if(ciudadActual == 1 )
+	{
+	
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed1b9611a2dfceb44&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-0.147436,-78.490094&amp;spn=0.003755,0.00456&amp;z=17&amp;iwloc=0004ed1b98217195dee44&amp;output=embed"></iframe><br />';
+	}
+	//motos
+	if(ciudadActual == 2 )
+	{
+	
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed1baf0365e828724&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-0.161319,-78.480363&amp;spn=0.01502,0.018239&amp;z=15&amp;iwloc=0004ed1bb9c072fa49870&amp;output=embed"></iframe><br />';
+	}
+	//colisiones
+	if(ciudadActual == 3 )
+	{
+	
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed1c1b8e0db7af83a&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-0.10025,-78.455772&amp;spn=0.120163,0.145912&amp;z=12&amp;iwloc=0004ed1ce7da5d9f58e6d&amp;output=embed"></iframe><br />';
+	}
+	//guayaquil
+	if(ciudadActual == 4 )
+	{
+	 
+	<!--mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed1d08c725fd24775&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-2.161047,-79.887085&amp;spn=0.120077,0.145912&amp;z=12&amp;output=embed"></iframe><br />';-->
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed1d08c725fd24775&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-2.11233,-79.875755&amp;spn=0.120081,0.145912&amp;z=12&amp;iwloc=0004f121404ac5965bbda&amp;output=embed"></iframe><br />';
+	
+	}
+	//Cuencacolsiones
+	if(ciudadActual == 5 )
+	{
+	 
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed1ecee03635e85d7&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-2.860749,-79.025002&amp;spn=0.120013,0.145912&amp;z=12&amp;iwloc=0004ed1ef13e858dfcdcf&amp;output=embed"></iframe><br />';
+	}
+
+	//cuencarobos parciales
+	if(ciudadActual == 6 )
+	{
+	
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed1f10193cda487ac&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-2.892081,-78.786263&amp;spn=0.00375,0.00456&amp;z=17&amp;iwloc=0004ed1f1a546096dd807&amp;output=embed"></iframe><br />';
+	}
+	//Ambato
+	if(ciudadActual == 7 )
+	{
+		
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed1f22cdbd1b4d96d&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-1.253886,-78.622284&amp;spn=0.030034,0.036478&amp;z=14&amp;iwloc=0004ed1f29969da436b6f&amp;output=embed"></iframe><br />';
+	}
+	//latacunga
+	if(ciudadActual == 8 )
+	{
+		 
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed1f62d3490e250ba&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-1.00228,-78.600944&amp;spn=0.003755,0.00456&amp;z=17&amp;iwloc=0004ed1f73738738857bd&amp;output=embed"></iframe><br />';
+	}
+//quevedo talleres
+if(ciudadActual == 9 )
+	{
+	
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed1f86a9f49de3b00&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-1.028111,-79.473553&amp;spn=0.030036,0.036478&amp;z=14&amp;iwloc=0004ed1f97a5183a8e5d9&amp;output=embed"></iframe><br />';
+
+	}	
+	//tulcan motores
+	if(ciudadActual == 10 )
+	{
+	
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed1f9e50041d6ae3c&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=0.8209,-77.695602&amp;spn=0.003755,0.00456&amp;z=17&amp;iwloc=0004ed1fa5040e63b24de&amp;output=embed"></iframe><br />';
+
+
+	}
+//Manta motores
+if(ciudadActual == 11 )
+	{
+	
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed1fafa96b7924f5d&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-0.557547,-80.516052&amp;spn=0.961247,1.167297&amp;z=9&amp;iwloc=0004ed1fd34d0d24c5f45&amp;output=embed"></iframe><br />';
+
+	}	
+//portoviejo motores
+	if(ciudadActual == 12 )
+	{
+		
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed1fe00640389979d&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-1.063038,-80.474682&amp;spn=0.030036,0.036478&amp;z=14&amp;iwloc=0004f13447c91614c2882&amp;output=embed"></iframe><br />';
+	}	
+	
+	//riobamba motores
+	if(ciudadActual == 13 )
+	{
+	
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed2e42a2ad5639841&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-1.647894,-78.651466&amp;spn=0.060057,0.072956&amp;z=13&amp;iwloc=0004ed2e82d48ea3f854c&amp;output=embed"></iframe><br />';
+	}	
+	//machala motores
+	if(ciudadActual == 14 )
+	{
+	
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed2e902f5d1d3e89b&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-3.252415,-79.987775&amp;spn=0.003749,0.00456&amp;z=17&amp;iwloc=0004ed2e99bf6e6e5faa1&amp;output=embed"></iframe><br />';
+	}	
+	//loja motores
+	if(ciudadActual == 15 )
+	{
+		
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed2ea0aa5e9f7f1ad&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-3.964442,-79.213314&amp;spn=0.029969,0.036478&amp;z=14&amp;iwloc=0004ed2eaefda12d8964c&amp;output=embed"></iframe><br />';
+	}
+     //esmeraldas motores
+	if(ciudadActual == 16 )
+	{
+	
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed2eb87e88a54486d&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=0.957826,-79.653186&amp;spn=0.003755,0.00456&amp;z=17&amp;iwloc=0004ed2ebfa849634ce7e&amp;output=embed"></iframe><br />';
+	}	
+	  //Ibarra motores
+	if(ciudadActual == 17 )
+	{
+		
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed2f405a53a937f46&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=0.348524,-78.135399&amp;spn=0.003755,0.00456&amp;z=17&amp;iwloc=0004ed2f472e677e6571c&amp;output=embed"></iframe><br />';
+	}	
+	 //coca motores
+	if(ciudadActual == 18 )
+	{
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed2edb158b632a394&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-0.456389,-76.988529&amp;spn=0.003755,0.00456&amp;z=17&amp;iwloc=0004ed2ee11bf684fe2d3&amp;output=embed"></iframe>';
+	}	
+		 //quito motores pessados
+	if(ciudadActual == 19 )
+	{
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed425f207983fe315&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-0.065918,-78.469849&amp;spn=0.240326,0.291824&amp;z=11&amp;iwloc=0004ed426d5ec5236960e&amp;output=embed"></iframe><br />';
+	}	
+			 //guayaquil motores pessados
+	if(ciudadActual == 20 )
+	{
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed2f16173c81bcea3&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-1.428075,-79.782715&amp;spn=1.92192,2.334595&amp;z=8&amp;iwloc=0004ed2f246a4756155cd&amp;output=embed"></iframe><br />';
+	}	
+				 //esmeraldas motores pessados
+	if(ciudadActual == 21 )
+	{
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed2f2f9efd00c8004&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=0.919711,-79.667916&amp;spn=0.003755,0.00456&amp;z=17&amp;iwloc=0004ed2f36c8886e4035e&amp;output=embed"></iframe><br />';
+	}	
+	 //ibarra motores pessados
+	if(ciudadActual == 22 )
+	{
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed2f405a53a937f46&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=0.348524,-78.135399&amp;spn=0.003755,0.00456&amp;z=17&amp;iwloc=0004ed2f472e677e6571c&amp;output=embed"></iframe><br />';
+	}	
+		 //coca motores pessados
+	if(ciudadActual == 23 )
+	{ 
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed2f4dd0386c2dfd8&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-0.456936,-76.988057&amp;spn=0.003755,0.00456&amp;z=17&amp;iwloc=0004ed2f516654f8c1775&amp;output=embed"></iframe><br />';
+	}
+			 //portoviejo motores pessados
+	if(ciudadActual == 24 )
+	{
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed2f5b5ca4b174279&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-1.068659,-80.475894&amp;spn=0.003754,0.00456&amp;z=17&amp;iwloc=0004ed2f62228b5228957&amp;output=embed"></iframe><br />';
+	}
+				 //ambato motores pessados
+	if(ciudadActual == 25 )
+	{
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed2f6b7f34b16709c&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-1.228744,-78.610536&amp;spn=0.003754,0.00456&amp;z=17&amp;iwloc=0004ed2f79cfbb8d4fbf1&amp;output=embed"></iframe><br />';
+	}	
+	 //quito1
+	if(ciudadActual == 26 )
+	{
+	mapa.innerHTML=
+	'<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed425f207983fe315&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-0.180716,-78.479644&amp;spn=0.003755,0.00456&amp;z=17&amp;iwloc=0004ed4262b660a6b6fa8&amp;output=embed"></iframe><br />';
+	}	
+		 //guayaquil
+	if(ciudadActual == 27 )
+	{
+		 
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed42ad0ca5f1b647a&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-2.15648,-79.895818&amp;spn=0.007505,0.00912&amp;z=16&amp;iwloc=0004ed42b44333593d49c&amp;output=embed"></iframe><br />';
+	}	
+	 //otavalo
+	if(ciudadActual == 28 )
+	{
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed4679927bb3d8531&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=0.386235,-78.122202&amp;spn=0.003755,0.00456&amp;z=17&amp;iwloc=0004ed467bde717a8f4e7&amp;output=embed"></iframe><br />';
+	}	
+	//sto domingo
+	if(ciudadActual == 29 )
+	{
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed468514c896c9aa5&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-0.260624,-79.185666&amp;spn=0.003755,0.00456&amp;z=17&amp;iwloc=0004ed468fd23c8e07498&amp;output=embed"></iframe><br />';
+	}
+	
+//	carwash		
+if(ciudadActual == 30 )
+	{
+		 
+	mapa.innerHTML=
+	'<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004f07d0151c42742184&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-0.164366,-78.469108&amp;spn=0.003755,0.00456&amp;z=17&amp;iwloc=0004f07d04f0d28c1fd7c&amp;output=embed"></iframe><br />';
+	}
+	//guayaquil livianos
+	if(ciudadActual == 31 )
+	{
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed1d08c725fd24775&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-2.08797,-79.889488&amp;spn=0.120083,0.145912&amp;z=12&amp;iwloc=0004ed1d4cf491e5e68be&amp;output=embed"></iframe><br />';
+	}
+	//ambato livianos
+	if(ciudadActual == 32 )
+	{
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed1f22cdbd1b4d96d&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-1.250368,-78.624516&amp;spn=0.030034,0.036478&amp;z=14&amp;iwloc=0004ed1f58dcc2faecf2a&amp;output=embed"></iframe><br />';
+	}
+	//portoviejo livianos
+	if(ciudadActual == 33 )
+	{
+	mapa.innerHTML='<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed1fe00640389979d&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-0.959199,-80.461121&amp;spn=0.240292,0.291824&amp;z=11&amp;iwloc=0004ed20442221cc846b4&amp;output=embed"></iframe><br />';
+	}			
+ }
+</script>
+
+    <!------fin  de codigo javascript--------->
+<script type="text/javascript" >
+function combo()
+{
+	var id=document.getElementById('comboid').value;
+	mapas(id);
+	
+}
+function mapas(mapaid)
+{
+	var mostrar=document.getElementById('menus');
+	var mapa = document.getElementById("mapa");
+	mapa.innerHTML = " "; 
+	if(mapaid==1)
+	{		
+		mostrar.innerHTML='<div id="menu">'
+		+'<ul>'
+			+'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Quito</span>'
+				+'<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->'
+				+'<ul>'
+					+'<li class="primera"><a  onclick="ciudades(26);">Matriz</a></li>'
+				+'</ul>'
+                +'<ul>'
+					+'<li class="primera"><a  onclick="ciudades(30);">Carwash</a></li>'		
+				+'</ul>'
+				<!--[if IE]></td></tr></table></a><![endif]-->
+			+'</li>'
+				+'<ul>'
+                +'<li class="primera"><a  onclick="ciudades(27);">Guayaquil</a></li>'	
+	               <!--<li class="nivel1" tabindex="2"><span class="nivel1"><a  onclick="ciudades(26);">Matriz</a></span>-->
+					
+				+'</ul>'
+  
+			  +'</div>';
+
+   }
+	if(mapaid==2)
+	{
+		
+		mostrar.innerHTML='<div id="menu">'
+	+'<ul>'
+  +'<li class="nivel1 primera" tabindex="1"><a  onclick="ciudades(19);">Quito</a>'
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(0);">Robos Parciales</a></li>'
+	+'<li><a  onclick="ciudades(1);">Parabrisas</a></li>'
+	+'<li><a  onclick="ciudades(2);"">Motos</a></li>'
+	+'<li><a  onclick="ciudades(3);">Colisiones</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+  <!--+'<li class="nivel1" tabindex="2"><span class="nivel1">Guayaquil</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 2<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+		+'<li class="primera"><a  onclick="ciudades(4);">Guayaquil</a></li>'
+		
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
++'</li>'
+ 
+  +'<li class="nivel1 primera" tabindex="1"><a  onclick="ciudades(5);">Cuenca</a>'
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(5);"">Colisiones</a></li>'
+	+'<li><a  onclick="ciudades(6);">Robos parciales</a></li>'
+
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+   
+  <!--  +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Ambato</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(7);"">Ambato</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+    
+<!-- +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Latacunga</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(8);">Latacunga</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+  
+  <!-- +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Otavalo</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(28);">Otavalo</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+  	
+	<!-- +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Sto Domingo</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(29);">Sto Domingo</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
+	<!-- +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Quevedo</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(9);">Quevedo</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
+	 <!--+'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Tulcan</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(10);"">Tulcan</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
+	<!-- +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Manta</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(11);">Manta</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
+	<!-- +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Portoviejo</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(12);">Portoviejo</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
+	<!-- +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Riobamba</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(13);">Riobamba</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
+	 <!--+'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Machala</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(14);">Machala</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
+	<!-- +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Loja</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(15);">Loja</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
+	<!-- +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Esmeraldas</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(16);">Esmeraldas</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
+	<!-- +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Ibarra</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(17);">Ibarra</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
+	 <!--+'<li class="nivel1 primera" tabindex="1"><span class="nivel1">El Coca</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(18);">El Coca</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
++'</ul>'
++'</div>';
+	}
+	if(mapaid==3)
+	{
+		
+		mostrar.innerHTML='<div id="menu">'
+	
+		+'<ul>'
+			+'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Quito</span>'
+				+'<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->'
+				+'<ul>'
+					+'<li class="primera"><a  onclick="ciudades(26);">Matriz</a></li>'
+				+'</ul>'
+                +'<ul>'
+					+'<li class="primera"><a  onclick="ciudades(30);">Carwash</a></li>'		
+				+'</ul>'
+				<!--[if IE]></td></tr></table></a><![endif]-->
+			+'</li>'
+				+'<ul>'
+                +'<li class="primera"><a  onclick="ciudades(27);">Guayaquil</a></li>'	
+	               <!--<li class="nivel1" tabindex="2"><span class="nivel1"><a  onclick="ciudades(26);">Matriz</a></span>-->
+					
+				+'</ul>'
++'</div>';
+	}
+	if(mapaid==4)
+	{
+		mostrar.innerHTML='<div id="menu">'
+	
+		+'<ul>'
+			+'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Quito</span>'
+				+'<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->'
+				+'<ul>'
+					+'<li class="primera"><a  onclick="ciudades(26);">Matriz</a></li>'
+				+'</ul>'
+                +'<ul>'
+					+'<li class="primera"><a  onclick="ciudades(30);">Carwash</a></li>'		
+				+'</ul>'
+				<!--[if IE]></td></tr></table></a><![endif]-->
+			+'</li>'
+				+'<ul>'
+                +'<li class="primera"><a  onclick="ciudades(27);">Guayaquil</a></li>'	
+	               <!--<li class="nivel1" tabindex="2"><span class="nivel1"><a  onclick="ciudades(26);">Matriz</a></span>-->
+					
+				+'</ul>'
++'</div>';
+	}
+	if(mapaid==5)
+	{
+		
+			mostrar.innerHTML='<div id="menu">'
+	+'<ul>'
+  +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Quito</span>'
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(0);">Robos Parciales</a></li>'
+	+'<li><a  onclick="ciudades(1);">Parabrisas</a></li>'
+	+'<li><a  onclick="ciudades(2);"">Motos</a></li>'
+	+'<li><a  onclick="ciudades(3);">Colisiones</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+  /*+'<li class="nivel1" tabindex="2"><span class="nivel1">Guayaquil</span>'*/
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 2<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	 +'<li class="primera"><a  onclick="ciudades(31);">Guayaquil</a></li>'
+		/*+'<li class="primera"><a  onclick="ciudades(31);">Matriz</a></li>'*/
+		
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
++'</li>'
+ 
+  +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Cuenca</span>'
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(5);"">Colisiones</a></li>'
+	+'<li><a  onclick="ciudades(6);">Robos parciales</a></li>'
+
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+   
+    /*+'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Ambato</span>'*/
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	 +'<li class="primera"><a  onclick="ciudades(32);">Ambato</a></li>'
+	/*+'<li class="primera"><a  onclick="ciudades(32);"">Matriz</a></li>'*/
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+    
+/* +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Latacunga</span>'*/
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	 +'<li class="primera"><a  onclick="ciudades(8);">Latacunga</a></li>'
+	
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+  
+  /* +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Otavalo</span>'*/
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+
+	 +'<li class="primera"><a  onclick="ciudades(28);">Otavalo</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+  	
+	/* +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Sto Domingo</span>'*/
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+
+	 +'<li class="primera"><a  onclick="ciudades(29);">Sto Domingo</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
+	/* +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Quevedo</span>'*/
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+
+	 +'<li class="primera"><a  onclick="ciudades(9);">Quevedo</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
+	 /*+'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Tulcan</span>'*/
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+
+	 +'<li class="primera"><a  onclick="ciudades(10);">Tulcan</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
+	/* +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Manta</span>'*/
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(11);">Manta</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
+	/* +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Portoviejo</span>'*/
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(33);">Portoviejo</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
+	 /*+'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Riobamba</span>'*/
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(13);">Riobamba</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
+	/* +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Machala</span>'*/
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(14);">Machala</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
+	/* +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Loja</span>'*/
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(15);">Loja</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
+	 /*+'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Esmeraldas</span>'*/
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(16);">Esmeraldas</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
+	 /*+'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Ibarra</span>'*/
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(17);">Ibarra</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
+	 /*+'<li class="nivel1 primera" tabindex="1"><span class="nivel1">El Coca</span>'*/
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(18);">Coca</a></li>'
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
+  +'</li>'
+	
++'</ul>'
++'</div>';
+	}
+	if(mapaid==6)
+	{
+		mostrar.innerHTML='<div id="menu">'
+	+'<ul>'
+ <!-- +'<li class="nivel1 primera" tabindex="1"><span class="nivel1">Quito</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 1<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+	+'<li class="primera"><a  onclick="ciudades(19);">Quito</a></li>'
+	<!--[if IE]></td></tr></table></a><![endif]-->
+	+'</ul>'
+  +'</li>'
+ <!--+'<li class="nivel1" tabindex="2"><span class="nivel1">Guayaquil</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 2<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+		+'<li class="primera"><a  onclick="ciudades(20);">Guayaquil</a></li>'
+		
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
++'</li>'
+	
+	<!-- +'<li class="nivel1" tabindex="2"><span class="nivel1">Esmeraldas</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 2<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+		+'<li class="primera"><a  onclick="ciudades(21);">Esmeraldas</a></li>'
+		
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
++'</li>'
+	
+	<!-- +'<li class="nivel1" tabindex="2"><span class="nivel1">Ibarra</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 2<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+		+'<li class="primera"><a  onclick="ciudades(22);">Ibarra</a></li>'
+		
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
++'</li>'
+	
+	<!-- +'<li class="nivel1" tabindex="2"><span class="nivel1">El Coca</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 2<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+		+'<li class="primera"><a  onclick="ciudades(23);">El Coca</a></li>'
+		
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
++'</li>'
+	
+	<!-- +'<li class="nivel1" tabindex="2"><span class="nivel1">Portoviejo</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 2<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+		+'<li class="primera"><a  onclick="ciudades(24);">Portoviejo</a></li>'
+		
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
++'</li>'
+
+<!-- +'<li class="nivel1" tabindex="2"><span class="nivel1">Ambato</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 2<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+		+'<li class="primera"><a  onclick="ciudades(25);">Ambato</a></li>'
+		
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
++'</li>'
+
+	<!-- +'<li class="nivel1" tabindex="2"><span class="nivel1">Cuenca</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 2<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+		+'<li class="primera"><a  onclick="ciudades(5);">Cuenca</a></li>'
+		
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
++'</li>'
+
+<!-- +'<li class="nivel1" tabindex="2"><span class="nivel1">Loja</span>'-->
+<!--[if IE]><a href="#" class="nivel1ie">OpciÃ³n 2<table class="falsa"><tr><td><![endif]-->
+	+'<ul>'
+		+'<li class="primera"><a  onclick="ciudades(15);">Loja</a></li>'
+		
+	+'</ul>'
+<!--[if IE]></td></tr></table></a><![endif]-->
++'</li>'
+	
++'</ul>'
++'</div>';
+	
+	}
+}
+
+</script>
+<style type="text/css">
+.boton{
+	font-family:"Helvetica", Arial,  sans-serif;
+	background-image:url(img/background_menu3.png);
+	background-repeat:no-repeat ;
+	bottom:center;	
+	margin-right:4px;
+	border: none;
+
+	font-weight: bold;
+	width: 215px;
+	height: 30px;
+	padding-left: 10px;
+	display:block;
+ 
+}
+.boton a
+{
+	
+	display:block;
+	/*padding-top:5px;*/
+	font-size:14px;
+}
+
+.boton:hover{
+	background-image:url(img/background_menu3.png);
+	background-position: 0 -32px;
+	margin-right: 4px;
+	cursor: pointer;
+	height: 30px;
+}
+
+.selected{
+	font-family:"Helvetica", Arial,sans-serif;
+	text-decoration:none;
+	background-image:url(img/background_menu3.png);
+	display: inline;
+	list-style: none;
+	margin-right: 4px;
+	color: #fff;
+	border: none;
+	padding: 3px 10px;
+	cursor: pointer;
+	font-weight:normal;
+}
+
+#framecontent{
+	position: absolute;
+	top: 0px;
+	bottom: 0;
+	width: 208px; /*Width of frame div*/
+	overflow: hidden; /*Disable scrollbars. Set to */
+	/*background-color: #999;
+	color: #ffffff;*/
+	font-size: 14px;	
+	
+}
+
+#maincontent{
+	position: fixed;
+	top: 0; 
+	left: 200px; /*Set left value to WidthOfFrameDiv*/
+	right: 0;
+	bottom: 0;
+	overflow: auto; 
+}
+.innertube{
+	margin-top: 46px;
+	margin-left:212px; /*Margins for inner DIV inside each DIV (to provide padding)*/
+}
+* html body{ /*IE6 hack*/
+	padding: 0 0 0 200px; /*Set value to (0 0 0 WidthOfFrameDiv)*/
+}
+
+* html #maincontent{ /*IE6 hack*/
+	height: 100%; 
+	width: 100%; 
+	margin-left:100px;
+
+}
+#menu
+{
+	position: absolute;
+	top: 25px;
+	bottom: 0;
+	width: 165px; /*Width of frame div*/
+	/*height: 351px;*/
+	/*height: 558px;*/
+	/*height: 590px;*/
+	height: 590px;
+	overflow: hidden; /*Disable scrollbars. Set to */
+	/*background-color: #999;
+	color: #ffffff;*/
+	font-size: 13px;
+	margin-left:48px;	
+}
+#menu1
+{
+	position: absolute;
+	top: 0px;
+	bottom: 0;
+	left: 26px;
+	width: 208px; /*Width of frame div*/
+	/*height: 351px;*/
+	/*height: 558px;*/
+	height: 590px;
+	overflow: hidden; /*Disable scrollbars. Set to */
+	/*background-color: #999;
+	color: #ffffff;*/
+	font-size: 14px;	
+}
+#fondo
+{
+/*background-image:url(img/nuestrastiendasprincipales.jpg);
+	background-repeat:no-repeat;
+	background-color:#A54398;*/
+}
+
+</style>
+</head>
+
+<body >
+<div id="framecontent"  >
+	<select  id="comboid" name="comboid" onchange="combo();" >
+	<!--<option value="0">Seleccione una Opci&oacute;n</option>-->
+	<option value="1">Inspecciones</option>
+	<option value="2">Aviso de Siniestro</option>
+	<option value="3">Compra de Seguros</option>
+	<option  value="4">Entrega de P&oacute;lizas</option>
+	<option  value="5">Talleres de Veh&iacute;culos Livianos</option>
+	<option  value="6">Talleres de Veh&iacute;culos Pesados</option>
+	</select>
+</div>
+
+<!--style="overflow-x:hidden; overflow-y:scroll; WIDTH: 205px; TOP: 48px; HEIGHT: 232px"-->
+
+
+
+
+<!--
+
+-->
+<div id="menus">
+	
+<div id="menu">
+	<ul>
+		<li class="nivel1 primera" tabindex="1"><span class="nivel1">Quito</span>
+		
+		<ul>
+		<li class="primera"><a  onclick="ciudades(26);">Matriz</a></li>
+		</ul>
+		<ul>
+		<li class="primera"><a  onclick="ciudades(30);">Carwash</a></li>		
+		</ul>
+		
+		</li>
+		<ul>
+		<li class="primera"><a  onclick="ciudades(27);">Guayaquil</a></li>
+		<!--<li class="nivel1" tabindex="2"><span class="nivel1"><a  onclick="ciudades(26);">Matriz</a></span>-->
+	</ul>
+</div>
+</div>
+<div class="innertube">
+	<div id="mapa">
+		<iframe width="425" height="589" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ec/maps/ms?msa=0&amp;msid=210901649193154815074.0004ed425f207983fe315&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=-0.180716,-78.479644&amp;spn=0.003755,0.00456&amp;z=17&amp;iwloc=0004ed4262b660a6b6fa8&amp;output=embed"></iframe><br />
+	</div>
+</div>
+</body>
+</html>
